@@ -31,12 +31,12 @@ background: linear-gradient(75deg, rgba(33,227,200,0.304359243697479) 25%, rgba(
 
 }
 .piece.p1 {
-background-image: url('Untitled.png');
+background-image: url('pinkF.png');
  
 }
 
 .piece.p2 {
- background-image: url('Untitled\ \(1\).png');
+ background-image: url('blueF.png');
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
