@@ -1,8 +1,8 @@
 /* game board table */
 
 body{ 
-  background: rgb(29,253,156);
-background: linear-gradient(90deg, rgba(29,253,156,1) 44%, rgba(252,69,246,0.8015581232492998) 88%);
+  background: rgb(33,227,200);
+background: linear-gradient(75deg, rgba(33,227,200,0.304359243697479) 25%, rgba(95,200,133,0.9444152661064426) 75%);
  
 }
 #board { 
@@ -16,7 +16,7 @@ background: linear-gradient(90deg, rgba(29,253,156,1) 44%, rgba(252,69,246,0.801
 #board td {
   width: 75px;
   height: 50px;
-  border: solid 2px violet;
+  border: solid 2px green;
   border-radius: 8px ;
 }
 
@@ -39,6 +39,7 @@ background-color: rebeccapurple;
 .piece.p2 {
  background-color: rgba(39,231,171,1);
 
+ 
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
