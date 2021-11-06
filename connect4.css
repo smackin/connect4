@@ -15,26 +15,25 @@ background: linear-gradient(75deg, rgba(33,227,200,0.304359243697479) 25%, rgba(
 
 #board td {
   width: 75px;
-  height: 50px;
-  border: solid 2px green;
-  border-radius: 8px ;
+  height: 60px;
+  border: solid 1.5px green;
+  border-radius: 9px ;
 }
 
 /* pieces are div within game table cells: draw as colored circles */
 
 .piece {
   /* TODO: make into circles */
-  width: 85%;
-    height: 85%;
+  width: 80%;
+    height: 80%;
     border-radius: 50%;
     margin-bottom: 5px;
-
 }
+
 .piece.p1 {
 background-image: url('pinkF.png');
  
 }
-
 .piece.p2 {
  background-image: url('blueF.png');
 }
@@ -50,6 +49,7 @@ background-image: url('pinkF.png');
 #column-top td:hover {
   background-color: pink;
   opacity: .5;
+  
 }
 
 h1 { 
@@ -64,15 +64,15 @@ h3{
   text-align: center;
   text-decoration: underline;
   color: gray;
-  font-family: cursive;
-  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
 p{
   text-align: center;
   color: gray;
-  font-family: cursive;
-  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .75em;
 }
 
 .rules {
