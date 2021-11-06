@@ -24,22 +24,19 @@ background: linear-gradient(75deg, rgba(33,227,200,0.304359243697479) 25%, rgba(
 
 .piece {
   /* TODO: make into circles */
-  margin: 5px;
   width: 85%;
-  height: 85%;
-  border-radius: 50%;
-  margin-bottom: 10px;
+    height: 85%;
+    border-radius: 50%;
+    margin-bottom: 5px;
 
 }
 .piece.p1 {
-background-color: rebeccapurple;
+background-image: url('Untitled.png');
  
 }
 
 .piece.p2 {
- background-color: rgba(39,231,171,1);
-
- 
+ background-image: url('Untitled\ \(1\).png');
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
