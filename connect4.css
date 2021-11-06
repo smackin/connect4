@@ -1,7 +1,8 @@
 /* game board table */
 
 body{ 
-  background: linear-gradient(0deg, rgba(39,231,171,1) 35%, rgba(235,119,242,0.9444152661064426) );
+  background: rgb(29,253,156);
+background: linear-gradient(90deg, rgba(29,253,156,1) 44%, rgba(252,69,246,0.8015581232492998) 88%);
  
 }
 #board { 
@@ -59,4 +60,24 @@ h1 {
   color: lavenderblush;
   font-family: cursive;
   font-size: 2.5em;
+}
+
+h3{ 
+  text-align: center;
+  text-decoration: underline;
+  color: gray;
+  font-family: cursive;
+  font-size: 2em;
+}
+
+p{
+  text-align: center;
+  color: gray;
+  font-family: cursive;
+  font-size: 1em;
+}
+
+.rules {
+  border: 1px gray; 
+
 }
