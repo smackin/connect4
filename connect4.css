@@ -1,9 +1,22 @@
 /* game board table */
 
+body{ 
+  background: linear-gradient(0deg, rgba(39,231,171,1) 35%, rgba(235,119,242,0.9444152661064426) );
+ 
+}
+#board { 
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("plantsbackground.jpeg"); 
+  background-size: cover;
+
+}
+
 #board td {
-  width: 50px;
+  width: 75px;
   height: 50px;
-  border: solid 1px #666;
+  border: solid 2px violet;
+  border-radius: 8px ;
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -11,8 +24,20 @@
 .piece {
   /* TODO: make into circles */
   margin: 5px;
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+}
+.piece.p1 {
+background-color: rebeccapurple;
+ 
+}
+
+.piece.p2 {
+ background-color: rgba(39,231,171,1);
+
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
@@ -20,9 +45,18 @@
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border:  1px lightgray;
 }
 
 #column-top td:hover {
-  background-color: gold;
+  background-color: pink;
+  opacity: .5;
+}
+
+h1 { 
+  text-shadow: 7px 7px 5px rgb(23 10 6 / 33%);
+  text-align: center;
+  color: lavenderblush;
+  font-family: cursive;
+  font-size: 2.5em;
 }
