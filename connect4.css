@@ -1,8 +1,8 @@
 /* game board table */
 
 body{ 
-  background: rgb(29,253,156);
-background: linear-gradient(90deg, rgba(29,253,156,1) 44%, rgba(252,69,246,0.8015581232492998) 88%);
+  background: rgb(33,227,200);
+background: linear-gradient(75deg, rgba(33,227,200,0.304359243697479) 25%, rgba(95,200,133,0.9444152661064426) 75%);
  
 }
 #board { 
@@ -15,30 +15,27 @@ background: linear-gradient(90deg, rgba(29,253,156,1) 44%, rgba(252,69,246,0.801
 
 #board td {
   width: 75px;
-  height: 50px;
-  border: solid 2px violet;
-  border-radius: 8px ;
+  height: 60px;
+  border: solid 1.5px green;
+  border-radius: 9px ;
 }
 
 /* pieces are div within game table cells: draw as colored circles */
 
 .piece {
   /* TODO: make into circles */
-  margin: 5px;
-  width: 85%;
-  height: 85%;
-  border-radius: 50%;
-  margin-bottom: 10px;
-
+  width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin-bottom: 5px;
 }
+
 .piece.p1 {
-background-color: rebeccapurple;
+background-image: url('pinkF.png');
  
 }
-
 .piece.p2 {
- background-color: rgba(39,231,171,1);
-
+ background-image: url('blueF.png');
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
@@ -52,6 +49,7 @@ background-color: rebeccapurple;
 #column-top td:hover {
   background-color: pink;
   opacity: .5;
+  
 }
 
 h1 { 
@@ -66,15 +64,15 @@ h3{
   text-align: center;
   text-decoration: underline;
   color: gray;
-  font-family: cursive;
-  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
 p{
   text-align: center;
   color: gray;
-  font-family: cursive;
-  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .75em;
 }
 
 .rules {
