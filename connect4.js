@@ -22,8 +22,12 @@ function makeBoard() {
  }
 }
 
-/** makeHtmlBoard: make HTML table and row of column tops. */
+function initNewGame(){
+  currPlayer = 1; // active player 1 or 2  
+  board = [];  // array of rows, each row is array of cells (board[y][x])
+}
 
+/** makeHtmlBoard: make HTML table and row of column tops. */
 function makeHtmlBoard() {
   // TODO: get "htmlBoard" variable from the item in HTML w/ID of "board"
    const board = document.getElementById('board');
@@ -59,7 +63,7 @@ function makeHtmlBoard() {
 
 function findSpotForCol(x) {
   // TODO: write the real version of this, rather than always returning 0
-  for (let y= HEIGHT-1; y>0; y--){
+  for (let y= HEIGHT-1; y>=0; y--){
     if(!board[y][x]){
       return y; 
     }
@@ -85,6 +89,8 @@ function placeInTable(y, x) {
 function endGame(msg) {
   // TODO: pop up alert message
   alert(msg);
+
+  initNewGame();
 }
 
 /** handleClick: handle click of column top to play piece */
@@ -117,7 +123,8 @@ function handleClick(evt) {
 
   // switch players
   // TODO: switch currPlayer 1 <-> 2 ...currPlayer is ===1, or 2 if not 1.  
-  currPlayer = currPlayer === 1 ? 2 : 1; /// why would let or const not work in this situation?  
+  currPlayer = currPlayer === 1 ? 2 : 1; 
+  /// why would let or const not work in this situation?  -- it is already declared at the top of the file -  this is a terniary operator.  
 }
 
 /** checkForWin: check board cell-by-cell for "does a win start here?" */
@@ -127,7 +134,6 @@ function checkForWin() {
     // Check four cells to see if they're all color of current player
     //  - cells: list of four (y, x) cells
     //  - returns true if all are legal coordinates & all match currPlayer
-
     return cells.every(
       ([y, x]) =>
         y >= 0 &&
@@ -155,4 +161,5 @@ function checkForWin() {
 }
 
 makeBoard();
-makeHtmlBoard();
+
+makeHtmlBoard(); 
